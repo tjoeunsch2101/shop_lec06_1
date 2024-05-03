@@ -35,7 +35,7 @@ public class SecurityConfig {
 		// .usernameParameter("email") <-- 을 작성해야 함
 		http.formLogin(form -> form
 				                   .loginPage("/member/signin")
-				                   .defaultSuccessUrl("/", true)
+				                   .defaultSuccessUrl("/",  true)
 				                   .failureUrl("/member/signin/error")
 				                   .usernameParameter("email")
 				                   .permitAll());
